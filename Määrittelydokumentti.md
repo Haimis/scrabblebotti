@@ -1,5 +1,5 @@
 # Määrittelydokumentti
-Scrabble on sanapeli, jossa kerätään pisteitä laatimalla pelilaudalle sanoja. Pelaajilla on käytössään seitsemän umpimähkään valittua kirjainlaattaa, joista sanat laaditaan yhdistämällä ne laudalla oleviin kirjainlaattoihin. Kirjainlaatat on pisteytetty siten, että harvinaisemmista kirjaimista saa enemmän pisteitä. Projektin tavoitteena on toteuttaa scrabblebotti, joka muodostaa parhaat pisteet antavat suomen kielen sanat pelaajan käytössä olevista kirjainlaatoista.
+Scrabble on sanapeli, jossa kerätään pisteitä laatimalla pelilaudalle sanoja. Pelaajilla on käytössään seitsemän umpimähkään valittua kirjainlaattaa, joista sanat laaditaan yhdistämällä ne laudalla oleviin kirjainlaattoihin. Kirjainlaatat on pisteytetty siten, että harvinaisemmista kirjaimista saa enemmän pisteitä. Projektin tavoitteena on toteuttaa scrabblebotti, joka muodostaa parhaat pisteet antavat suomen kielen sanat pelaajan käytössä olevista kirjainlaatoista. Käytettävä ohjelmointikieli on Java.
 
 ## Projektin tietorakenteet ja algoritmit
 Mitä algoritmeja ja tietorakenteita toteutat työssäsi
