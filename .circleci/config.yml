@@ -40,3 +40,8 @@ jobs:
 
       # run tests!
       - run: gradle test
+
+      # Codecov
+      - run: gradle check
+      - run: gradle jacocoTestReport
+      - run: bash <(curl -s https://codecov.io/bash)
