@@ -1,4 +1,4 @@
-# scrabblebotti [![CircleCI](https://circleci.com/gh/Haimis/scrabblebotti.svg?style=shield)](https://circleci.com/gh/Haimis/scrabblebotti) [![codecov](https://codecov.io/gh/Haimis/scrabblebotti/branch/master/graph/badge.svg)](https://codecov.io/gh/Haimis/scrabblebotti)
+# scrabblebotti [![CircleCI](https://circleci.com/gh/Haimis/scrabblebotti.svg?style=shield)](https://circleci.com/gh/Haimis/scrabblebotti) [![codecov](https://codecov.io/gh/Haimis/scrabblebotti/branch/master/graph/badge.svg)](https://codecov.io/gh/Haimis/scrabblebotti)[![Maintainability](https://api.codeclimate.com/v1/badges/b09b6a98c0b501675976/maintainability)](https://codeclimate.com/github/Haimis/scrabblebotti/maintainability)
 Tietorakenteiden ja algoritmien harjoitustyö
 
 ## Viikkoraportit
