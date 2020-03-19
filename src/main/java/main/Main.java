@@ -5,7 +5,9 @@
  */
 package main;
 
-import scrabblebotti.Dictionary;
+import java.io.IOException;
+import scrabblebotti.WordLoader;
+import scrabblebotti.*;
 
 /**
  *
@@ -16,7 +18,11 @@ public class Main {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        WordLoader w = new WordLoader();
+        w.openFile();
+        w.readFile();
+        w.closeFile();
         Dictionary d = new Dictionary();
         d.addWord("koira");
         int l = d.getSanat().size();
