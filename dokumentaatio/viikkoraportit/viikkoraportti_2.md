@@ -9,6 +9,7 @@ Viikon aikana toteutin seuraavat toimenpiteet:
 - kirjoitin pythonscriptin, jolla saan tarvittavan sanakirjan helposti ladattua ja siistittyä
 - toteutin alustavan latojan, jolla voin lukea sanakirjan sanoja tiedostosta
 - viikkoraportti
+- otin javadocin käyttöön
 
 ## Miten ohjelma on edistynyt?
 
@@ -32,9 +33,8 @@ Tuo latoja lukee nyt projektin juuressa olevaa sanalistatiedostoa ja toimi myös
 - aloitan toteuttamaan algoritmia sanakirjan lateluun tietorakenteeseen
 
 ## Mitä jäi tavoitteista tekemättä?
-- Javadoc dokumentaatiota ei ole aloitettu
-- alustavia tietorakenteita ei ole aloitettu
+- alustavia tietorakenteita ei ole kummemmin aloitettu
 
 ## Paljonko käytin aikaa?
 
-9h
+10h
