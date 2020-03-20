@@ -21,6 +21,11 @@ checkstyle {
 	toolVersion "7.6.1"
 }
 
+javadoc {
+    source = sourceSets.main.allJava
+    classpath = configurations.compile
+}
+
 jar {
     manifest {
         attributes 'Main-Class': 'main.Main'
