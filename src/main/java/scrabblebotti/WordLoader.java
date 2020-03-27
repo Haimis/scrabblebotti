@@ -30,13 +30,13 @@ public class WordLoader {
      * @return return List with words written from source file.
      * @throws IOException 
      */
-    public List<String> readFile() throws IOException {
-        List<String> list = new ArrayList<>();
+    public Letter readFile() throws IOException {
+        Letter l = new Letter("!", false);
         String line;
         while ((line = br.readLine()) != null) {
-            list.add(line);
+            splitWord(line, l);
         }
-        return list;
+        return l;
 
 
     }
@@ -48,5 +48,25 @@ public class WordLoader {
     public void closeFile() throws IOException {
         br.close();
     }
-
+    
+    public void splitWord(String word, Letter l) {
+        if (word.length() == 1) {
+            
+            // last letter in word
+            if (l.next[word.hashCode()] == null) {
+                l.next[word.hashCode()] = new Letter (word, true);
+            } else {
+                l.next[word.hashCode()].last = true;
+            }
+        } else {
+            if (l.next[word.substring(0, 1).hashCode()] == null) {
+                Letter nl = new Letter (word.substring(0, 1), false);
+                l.next[word.substring(0, 1).hashCode()] = nl;
+                splitWord(word.substring(1, word.length()), nl);
+            } else {
+                splitWord(word.substring(1, word.length()), l.next[word.substring(0, 1).hashCode()]);
+            }
+        }
+    }
+    
 }
