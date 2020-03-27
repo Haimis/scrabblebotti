@@ -20,7 +20,7 @@ Kertasin hashCodeen ja rekursioon liittyvää asiaa.
 
 ## Mikä jäi epäselväksi?
 
--
+Tällä hetkellä kaikki tuntuu selkeältä.
 
 ## Mitä teen seuraavaksi?
 
