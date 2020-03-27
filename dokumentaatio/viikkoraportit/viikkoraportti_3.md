@@ -3,29 +3,36 @@
 ## Mitä olen tehnyt?
 
 Viikon aikana toteutin seuraavat toimenpiteet:
-- valitsin itseäni kiinnostavan aiheen ja etsin sopivan dataresurssin
-- etsin projektille sopivia toteutustapoja tirakirjasta ja verkosta
-- kertasin tila- ja aikavaativuusasioita tirakirjasta
-- tutustuin kurssimateriaaliin ja ohjeistukseen
-- kirjoitin projektista määrittelydokumentin
-- loin projektille repositorion githubiin ja liitin sen labtooliin
-- tarkastin, että issuet ovat sallittu
+
+- aloitin sanoja tallentavan tietorakenteen luomisen 
+- toteutin alustavan algoritmin sanojen lateluun tietorakenteeseen
+- heitän konffausta varten luodun Dictionary-luokan testeineen mäkeen
+- kirjoitin rekursiivisen funktion, jolla testata, että latelu toimii
+- viikkoraportti
 
 ## Miten ohjelma on edistynyt?
 
-Ohjelmalle on etärepositorio olemassa ja alustavat toteutustavat suunniteltu. Riviäkään koodia ei tosin ole kirjoitettu.
+Olin viime viikolla ehkä piirun verran edellä laadunvarmistusinfran kanssa, joten tällä viikolla tuli vähemmän tehtyä. Tällä hetkellä ohjelma latoo sanalistan puurakenteeseen ja tulostaa siitä sanat rekusiivisella haulla.
 
 ## Mitä opin?
 
-Palautin mieleen tirajuttuja ja laman juttuja ääreellisisitä automaateista. Opin ainakin teoriatasolla toteutuksen ääreelliselle automaatille. 
+Kertasin hashCodeen ja rekursioon liittyvää asiaa.
 
 ## Mikä jäi epäselväksi?
 
-Vielä jäi hiukan epäselväksi onko projektini riittävän laaja kurssin suorittamiseen. Myös algoritmien tilavaativuuksista olen jokseenkin kujalla.
+-
 
 ## Mitä teen seuraavaksi?
 
-Luon itse projektin ja konfiguroin testikattavuudet, checkstylen ja muut laaduntarkkailutyökalut kuntoon. Lähden työstämään sanakirjan dataa projektiin sopivaan muotoon ja hahmottelemaan tietorakennetta sanastolle.
+- toteutan tämän viikon "mitä jäi tavoitteista tekemättä" -kohdat
+- kirjoitan testit latojalle ja siivoan mainin
+- testaan tietorakenteen "täydellä" sanakirjalla
+- optimoin mm. taulukkojen kokoja pienemmäksi
+
+## Mitä jäi tavoitteista tekemättä?
+
+- varmistan, että circle ci:ssä tapahtuu kaikki tarvittava, myös jar:n generointi, checkstyle
+- järkevöitän latojan rakennetta ja korjaan sen testit vähemmän suurpiirteisiksi
 
 ## Paljonko käytin aikaa?
 
