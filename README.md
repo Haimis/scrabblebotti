@@ -7,4 +7,6 @@ Tietorakenteiden ja algoritmien harjoitustyö
 
 [Viikko 2](https://github.com/Haimis/scrabblebotti/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_2.md)
 
+[Viikko 3](https://github.com/Haimis/scrabblebotti/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_3.md)
+
 [Viikko 4](https://github.com/Haimis/scrabblebotti/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_4.md)
