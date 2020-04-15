@@ -21,8 +21,8 @@ public class WordLoader {
      *  automatically designated source file.
      * @throws FileNotFoundException 
      */
-    public void openFile() throws FileNotFoundException {
-        br = new BufferedReader(new FileReader("sanalista.txt"));  
+    public void openFile(String filename) throws FileNotFoundException {
+        br = new BufferedReader(new FileReader(filename));  
     }
     
     /**
@@ -30,11 +30,14 @@ public class WordLoader {
      * @return return List with words written from source file.
      * @throws IOException 
      */
-    public Letter readFile() throws IOException {
-        Letter l = new Letter("!", false);
+    public Letter readWordList() throws IOException {
+        Letter l = new Letter("", false);
         String line;
         while ((line = br.readLine()) != null) {
-            splitWord(line, l);
+            if (!line.contains("-") && !line.contains("å") && !line.contains("š") && !line.contains("ž") && !line.contains("û") && line.length() < 8) {
+                splitWord(line, l);
+            }
+            
         }
         return l;
 
@@ -51,7 +54,6 @@ public class WordLoader {
     
     public void splitWord(String word, Letter l) {
         if (word.length() == 1) {
-            
             // last letter in word
             if (l.next[word.hashCode()] == null) {
                 l.next[word.hashCode()] = new Letter (word, true);

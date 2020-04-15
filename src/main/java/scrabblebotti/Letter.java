@@ -8,7 +8,7 @@ public class Letter {
 
     public Letter(String letter, boolean last) {
         this.letter = letter;
-        this.next = new Letter[247];
+        this.next = new Letter[250];
         this.last = last;
     }
 
@@ -35,5 +35,7 @@ public class Letter {
     public void setLast(boolean last) {
         this.last = last;
     }
+    
+
 }
 

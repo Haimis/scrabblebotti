@@ -12,6 +12,10 @@ dependencies {
     testImplementation 'io.cucumber:cucumber-junit:5.5.0'
 }
 
+run{
+    standardInput = System.in
+}
+
 repositories {
     jcenter()
     mavenCentral()
