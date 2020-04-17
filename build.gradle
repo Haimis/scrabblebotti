@@ -10,6 +10,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     testImplementation 'io.cucumber:cucumber-java:5.5.0'
     testImplementation 'io.cucumber:cucumber-junit:5.5.0'
+    testImplementation 'org.mockito:mockito-core:2.+'
 }
 
 run{
