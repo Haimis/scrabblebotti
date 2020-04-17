@@ -50,8 +50,7 @@ public class LogicTest {
     public void buildCallsAllMethdos() throws IOException {
         logic.build();
         verify(cli, times(1)).printHelloMessage();
-        assertEquals(true, l.getNext()[97]);
-        // tsekkaa vielä metodit erikseen
+        // TÄSSÄ PITÄISI TESTATA MYÖS, ETTÄ TIETORAKENTEIDEN BUILDEJA KUTSUTAAN!
     }
     
     @Test
