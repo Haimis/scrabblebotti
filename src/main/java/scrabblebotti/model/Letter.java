@@ -1,10 +1,22 @@
 
-package scrabblebotti;
+package scrabblebotti.model;
 
-public class Letter {
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import scrabblebotti.controller.WordLoader;
+import scrabblebotti.view.CLI;
+
+/**
+ * Class <code>Letter</code> is the data structure where dictionary is stored.
+ * 
+ * 
+ * 
+ */
+public class Letter extends DataStructure {
     String letter;
-    Letter[] next;
-    boolean last;
+    public Letter[] next;
+    public boolean last;
 
     public Letter(String letter, boolean last) {
         this.letter = letter;
@@ -22,18 +34,29 @@ public class Letter {
 
     public boolean isLast() {
         return last;
-    }
+    }    
     
-    public void setLetter(String letter) {
-        this.letter = letter;
+    /**
+     * Calls readWordList method to process word list source file to data structure. 
+     * @param wl WordLoader that will handle data read from source file.
+     */
+    @Override
+    public void read(WordLoader wl) {
+        try {
+            wl.readWordList(this);
+        } catch (IOException ex) {
+            Logger.getLogger(Letter.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
-    public void setNext(Letter[] next) {
-        this.next = next;
-    }
-
-    public void setLast(boolean last) {
-        this.last = last;
+    /**
+    * Uses UI to receive path to word list source file.
+    * @param cli Command line interface to communicate with user
+    * @param defaultPath default path to source file which will be used if no user input.
+    */
+    @Override
+    public String getPath(CLI cli, String defaultPath) {
+        return cli.getWordListPath(defaultPath);
     }
     
 
