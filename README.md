@@ -13,6 +13,8 @@ Tietorakenteiden ja algoritmien harjoitustyö
 
 [Viikko 5](https://github.com/Haimis/scrabblebotti/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_5.md)
 
+[Viikko 6](https://github.com/Haimis/scrabblebotti/blob/master/dokumentaatio/viikkoraportit/viikkoraportti_6.md)
+
 ## Dokumentit
 
 [Määrittelydokumentti](https://github.com/Haimis/scrabblebotti/blob/master/dokumentaatio/M%C3%A4%C3%A4rittelydokumentti.md)
