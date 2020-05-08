@@ -41,7 +41,7 @@ public class WordLoader {
         try {
             String line;
             while ((line = br.readLine()) != null) {
-                if (!line.contains("-") && !line.contains("å") && !line.contains("š") && !line.contains("ž") && !line.contains("û") && line.length() < 8) {
+                if (!line.contains("-") && !line.contains("å") && !line.contains("š") && !line.contains("ž") && !line.contains("û") && line.length() < 9) {
                     splitWord(line, l);
                 }
 
@@ -80,7 +80,7 @@ public class WordLoader {
      * Splits words to letters and links them together to form a tree structure. 
      * @param word a singe word or sub-word to be processed.
      * @param l Letter entity where the first letter from processed word should me linked.
-     */    
+     */
     public void splitWord(String word, Letter l) {
         if (word.length() == 1) {
             // last letter in word
