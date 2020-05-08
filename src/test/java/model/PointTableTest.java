@@ -10,7 +10,7 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import scrabblebotti.controller.WordLoader;
-import scrabblebotti.model.Letter;
+import scrabblebotti.model.DataStructure;
 import scrabblebotti.model.PointTable;
 import scrabblebotti.view.CLI;
 
@@ -42,7 +42,7 @@ public class PointTableTest {
     }
     
     @Test
-    public void readerWorks() throws IOException {
+    public void readerGetsCalled() throws IOException {
         PointTable pt = new PointTable();
         pt.read(wl);
         verify(wl, times(1)).readPointList(pt);
@@ -54,5 +54,14 @@ public class PointTableTest {
         String defaultPath = "foo";
         String str = pt.getPath(cli, defaultPath);
         assertEquals("foo", str);
+    }
+    
+    @Test
+    public void buildCallsCorrectMethods() throws IOException {
+        DataStructure pt = new PointTable();
+        pt.build(cli, "foo", wl);
+        verify(wl, times(1)).openFile("foo");
+        verify(wl, times(1)).readPointList((PointTable) pt);
+        verify(wl, times(1)).closeFile();
     }
 }

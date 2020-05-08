@@ -42,7 +42,7 @@ public class LetterTest {
     }
     
     @Test
-    public void readerWorks() throws IOException {
+    public void readerGetsCalled() throws IOException {
         Letter l = new Letter("a", true);
         l.read(wl);
         verify(wl, times(1)).readWordList(l);
