@@ -2,7 +2,6 @@
 package scrabblebotti.view;
 
 import java.io.FileNotFoundException;
-import java.util.Scanner;
 
 /**
  * Abstract Class <code>CLI</code> handles communication with user.
@@ -11,10 +10,10 @@ import java.util.Scanner;
  * 
  */
 public class CLI {
-    Scanner scanner;
+    private IO io;
 
-    public CLI() {
-        this.scanner = new Scanner(System.in);
+    public CLI(IO io) {
+        this.io = io;
     }
 
     /**
@@ -23,10 +22,10 @@ public class CLI {
      * @return user input.
      */
     public String getWordListPath(String defaultWordList) {
-        System.out.println("Oletussanalista \"" + defaultWordList + "\" sijaitsee projektin\n"
+        io.print("Oletussanalista \"" + defaultWordList + "\" sijaitsee projektin\n"
                 + "juuressa. Mikäli haluat käyttää oletussanalistaa paina Enter.\n"
                 + "Mikäli haluat käyttää omaa sanalistaa, syötä polku sanalistaan.");
-        return scanner.nextLine();
+        return io.nextString();
     }
 
     /**
@@ -35,17 +34,17 @@ public class CLI {
      * @return user input.
      */
     public String getPointTablePath(String defaultPointTable) {
-        System.out.println("Oletuspistetaulu \"" + defaultPointTable + "\" sijaitsee projektin\n"
+        io.print("Oletuspistetaulu \"" + defaultPointTable + "\" sijaitsee projektin\n"
                 + "juuressa. Mikäli haluat käyttää oletuspistetaulua paina Enter.\n"
                 + "Mikäli haluat käyttää omaa pistetaulua, syötä polku pistetauluun.");
-        return scanner.nextLine();
+        return io.nextString();
     }
 
     /**
      * Pints the opening view for the software.
      */    
     public void printHelloMessage() {
-        System.out.println("///////////////////////////////////////////\n"
+        io.print("///////////////////////////////////////////\n"
                 + "// Tervetuloa käyttämään scrabblebottia! //\n"
                 + "///////////////////////////////////////////\n"
                 + "\n"
@@ -59,7 +58,7 @@ public class CLI {
      * @param e error message.
      */
     public void printErrorMessage(FileNotFoundException e) {
-        System.out.println("This feature is under construction");
+        io.print("This feature is under construction");
     }
 
     /**
@@ -67,9 +66,9 @@ public class CLI {
      * @return user input.
      */
     public String getTiles() {
-        System.out.println("Syötä kirjaimet, jotka sinulla on käytössä\n"
+        io.print("Syötä kirjaimet, jotka sinulla on käytössä\n"
                 + "muodossa \"jdasiks\". Järjestyksellä ei ole väliä.\n"
                 + "Voit sulkea ohjelman painamalla Enter");
-        return scanner.nextLine();
+        return io.nextString();
     }
 }
