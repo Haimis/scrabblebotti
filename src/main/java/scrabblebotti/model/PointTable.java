@@ -14,7 +14,7 @@ import scrabblebotti.view.CLI;
  * 
  */
 public class PointTable extends DataStructure {
-    int[] points;
+    public int[] points;
 
     public PointTable() {
         this.points = new int[250];

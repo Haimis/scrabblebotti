@@ -14,7 +14,7 @@ import scrabblebotti.view.CLI;
  * 
  */
 public class Letter extends DataStructure {
-    String letter;
+    public String letter;
     public Letter[] next;
     public boolean last;
 
