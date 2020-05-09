@@ -2,18 +2,18 @@
 
 ## Mitä on testattu, miten tämä tehtiin
 
-Tarkoitus on testata kunkin metodin toiminta yksikkötestein, sekä usercasejen toiminta integraatiotestein.
+Ohjelmaa on testattu sekä yksikkö, että integraatiotestein.
 Yksikkötestit ovat Junit testejä ja niisä on apuna Mockito-kirjasto.
-Integraatiotestit on toteutettu Cucumber-kirjastolla.
+Integraatiotestit on toteutettu Cucumber-kirjastolla. Ne testaavat ohjelmaa viiden kirjaimen ja 2500 kirjaimen syötteillä.
 
-## Minkälaisilla syötteillä testaus tehtiin (vertailupainotteisissa töissä tärkeää)
+## Minkälaisilla syötteillä testaus tehtiin
 
-`**TODO**`
+Yksikkötesteissä
+Integraatiotesteissä ohjelmaa testattiin syötteellä, jossa on viisi kirjainta. Tässä tavoitteena oli alle yhden sekunnin toimintavaste. Toisessa integraatiotestissä syöte oli 2500 kirjainta ja tässä tavoitteena 2 sekunnin toimintavaste. Valtaosa ajasta jälkimmäisessä testissä menee sanojen tulostamiseen näytölle.
 
 ## Miten testit voidaan toistaa
 
-`**TODO**`
+Testit toistetaan kloonaamalla projekti omalle koneelle ja ajamalla projektin juuressa komento `./gradlew test`.
 
 ## Ohjelman toiminnan empiirisen testauksen tulosten esittäminen graafisessa muodossa.
 
-`**TODO**`
