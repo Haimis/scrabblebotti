@@ -13,10 +13,10 @@ import scrabblebotti.view.CLI;
  * 
  */
 public class Logic {
-    CLI cli;
-    WordLoader wl;
-    Letter l;
-    PointTable pt;
+    public CLI cli;
+    public WordLoader wl;
+    public Letter l;
+    public PointTable pt;
 
     public Logic(CLI cli, WordLoader wl) {
         this.cli = cli;
@@ -33,11 +33,9 @@ public class Logic {
     public void build() throws FileNotFoundException, IOException {
         cli.printHelloMessage();
         
-        // konffaa sanalista ja rakenna sanapuu
         String defaultWordList = "sanalista2.txt";
         l.build(cli, defaultWordList, wl);
         
-        //konffaa pistetaulu ja rakenna pistetaulu
         String defaultPointTable = "sanapisteet.csv";
         pt.build(cli, defaultPointTable, wl);
         
