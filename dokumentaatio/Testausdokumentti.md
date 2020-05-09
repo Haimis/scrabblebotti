@@ -17,3 +17,6 @@ Testit toistetaan kloonaamalla projekti omalle koneelle ja ajamalla projektin ju
 
 ## Ohjelman toiminnan empiirisen testauksen tulosten esittäminen graafisessa muodossa.
 
+Alla olevassa giffissä nähtävillä ohjelman empiirinen testaus 1900 kirjaimen syötteellä.
+![Testigiffi](https://github.com/Haimis/scrabblebotti/blob/master/dokumentaatio/test.gif)
+
