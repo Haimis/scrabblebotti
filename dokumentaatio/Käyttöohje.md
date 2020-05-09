@@ -1,5 +1,6 @@
+# Käyttöohje
 
-# Ohjelman suorittaminen
+## Ohjelman suorittaminen
 
 1. Kloonaa projekti koneellesi
 2. Siirry projektin juurivalikkoon
